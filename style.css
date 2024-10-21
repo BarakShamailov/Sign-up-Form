@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/Norse-Bold.otf') format("otf"); /* Adjust the path and format as needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+
+.header-place{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 60px 330px 20px 60px;
+  
+}
+.submit-btn{
+  background-color: #f0f0f0;
+  padding: 40px 50px;
+  
+  height: 100%;
+}
+.login{
+  padding-top: 30px;
+}
+.main-form{
+  padding: 10px 60px 40px 50px;
+}
+button{
+  background-color: #596D48;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  width: 180px;
+  border: 2px solid #596D48;
+  border-radius: 8px;
+  padding: 4px 8px;
+
+}
+.sign-form{
+  background-color: white;
+  
+  
+}
+
+.right-side{
+  background-color: #f0f0f0;
+  flex: 1.7;
+  
+}
+
+
+body{
+    font-family: "CustomFont", 'Segoe UI', Verdana, sans-serif;
+    
+    
+
+}
+.main{
+  display: flex;
+  height: 100vh;
+  padding: 0 140px;
+  background-color: black;
+}
+.left-side{
+  flex: 1;
+}
+
+.left-side{
+    position: relative;
+
+}
+
+.my-bg{
+    position: absolute;
+    width: 31vw; /* Cover half of the window width */
+    height: 100vh; /* Cover half of the window height */
+    object-fit: cover; /* Ensure the image fills the area without distortion */
+    /*margin: 0 auto;  Optional: Centers the image horizontally */
+    
+    
+}
+
+.logo-img{
+  position: absolute;
+  top: 300px; /* Adjust the top position */
+  left: 130px; /* Adjust the left position */
+  width: 10vw; /* Set the width of the overlay image */
+ 
+  object-fit: cover; /* Ensure the overlay image maintains its aspect ratio */
+  
+}
+
+.login{
+  font-size: 14px;
+}

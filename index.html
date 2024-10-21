@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Sign Up</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="left-side">
+        
+            <img src="media/bg.jpg" alt="A background image" class="my-bg"> 
+             
+             <!-- <img src="media/odin-lined.png" alt="A logo image" class="logo-img"> --> 
+              
+             
+     
+         </div>
+         <div class="right-side">
+             <div class="header-place">
+                     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                        Sign up <em>now</em> to get started.</p>
+     
+                     <p>You <em>know</em> you want to.</p>
+             </div>
+             <div class="sign-form">
+                <div class="main-form">
+                    <h2>Let's do this !</h2>
+                <form action="#" method="get">
+                <div class="firstname-form">
+                    <div><label for="first-name"> FIRST NAME </label></div>
+                    <input type="text" id="first-name" name="first-name" pattern="^[^0-9]+$" value="" size=30 maxlength="245" required>
+                </div>
+                <div class="lastname-form">
+                    <div><label for="last-name"> LAST NAME </label></div>
+                    <input type="text" id="last-name" name="last-name" pattern="^[^0-9]+$" value="" size=30 maxlength="245" required>
+                </div>
+                <div class="email-form">
+                    <div><label for="email" data-help="Format email@email.com"> EMAIL </label></div>
+                    <input type="email" id="email" name="email" value="" size=30 maxlength="60" required>
+                </div>
+                <div class="phone-form">
+                    <div><label for="phone"> PHONE NUMBER </label></div>
+                    <input type="tel" id="phone" name="phone" value="" size=30 maxlength="32" required>
+                </div>
+                <div class="password-form">
+                    <div><label for="password"> PASSWORD </label></div>
+                    <input type="password" id="password" name="password" size="30" required
+                        autocomplete="new-password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters">
+                </div>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit">Create Account</button>
+                    <div class="login">
+                        Already have an account?
+                        <a href="https://www.theodinproject.com/dashboard"> Log in </a>
+                    </div>
+                </div>
+                </form>
+             </div>
+         </div>
+
+    </div>
+
+</body>
+</html>
