@@ -11,11 +11,19 @@
     <div class="main">
 
         <div class="left-side">
+            
         
             <img src="media/bg.jpg" alt="A background image" class="my-bg"> 
-             
-             <!-- <img src="media/odin-lined.png" alt="A logo image" class="logo-img"> --> 
-              
+            <div class="logo">
+                <img src="media/odin-lined.png" alt="logo" height="100%" class="logo-image">
+                
+                <div id="logo-text">ODIN</div>
+
+            </div>
+            <div class="credit">
+                Photo by <a class="creditCreator" href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"> Halie West </a> on <a class="creditCreator" href="https://unsplash.com/">Unsplash</a>
+            </div>
+                      
              
      
          </div>
@@ -31,7 +39,7 @@
                     <h2>Let's do this !</h2>
 
                         
-                <form action="#" method="get">
+                <form id="sign-form" action="#" method="get">
                     <div class="left-form">
                         <div class="firstname-form">
                             <div><label for="first-name"> FIRST NAME </label></div>
@@ -80,7 +88,7 @@
           
                 </div>
                 <div class="submit-btn">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" onclick="createAccountClicked()">Create Account</button>
                     <div class="login">
                         Already have an account?
                         <a href="https://www.theodinproject.com/dashboard"> Log in </a>
@@ -91,6 +99,26 @@
          </div>
 
     </div>
+    <script>
+
+            function createAccountClicked()
+            {
+                const form = document.getElementById("sign-form");
+                let isValid = true;
+
+                form.querySelectorAll("input","textarea").forEach((input) => {
+                    if (input.value.trim() === ""){
+                        input.style.border ="1px solid #c00";
+                        isValid = false;
+                    }
+                    else{
+                        input.style.border = "1px solid #ccc" ;
+                    }
+
+                });
+            }
+
+    </script>
 
 </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Norse-Bold.otf') format("otf"); /* Adjust the path and format as needed */
+    font-family: Norse-Bold;
+    src: url('./fonts/Norse-Bold.otf');
     font-weight: normal;
     font-style: normal;
   }
@@ -53,7 +53,7 @@ button{
 
 
 body{
-    font-family: "CustomFont", 'Segoe UI', Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     
     
 
@@ -75,23 +75,51 @@ body{
 
 .my-bg{
     position: absolute;
-    width: 31vw; /* Cover half of the window width */
-    height: 100vh; /* Cover half of the window height */
-    object-fit: cover; /* Ensure the image fills the area without distortion */
-    /*margin: 0 auto;  Optional: Centers the image horizontally */
-    
+    width: 31vw; 
+    height: 100vh; 
+    object-fit: cover; 
+   
     
 }
 
-.logo-img{
+.logo{
   position: absolute;
-  top: 300px; /* Adjust the top position */
-  left: 130px; /* Adjust the left position */
-  width: 10vw; /* Set the width of the overlay image */
- 
-  object-fit: cover; /* Ensure the overlay image maintains its aspect ratio */
+  display: flex;
+  top: 370px; 
+  padding-left: 38%;
+  background-color: rgba(5, 0, 0, 0.4); 
+  border-radius: 8px; 
   
 }
+.credit {
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  color: #ffffff; 
+  padding: 5px;
+  font-size: 14px; 
+}
+
+
+.creditCreator{
+  color: white;
+  font-weight: lighter;
+  text-decoration: underline;
+
+}
+ .logo-image{
+  width: 130px; 
+  height: 150px;
+ }
+
+ #logo-text{
+  padding: 25px 84px 1px 0;
+  font-family: Norse-Bold;
+  color: white;
+  font-size: 100px;
+  
+
+ }
 
 .login{
   font-size: 14px;
@@ -125,15 +153,9 @@ input{
 input:focus{
   box-shadow: 1px 1px 2px;
   outline-color: #1d83f8;
- 
   
 }
 
-input[type='password']:invalid{
-  border: 1px solid #c00;
- 
-  
-}
 label{
   font-size: 12px;
   font-family: sans-serif;
